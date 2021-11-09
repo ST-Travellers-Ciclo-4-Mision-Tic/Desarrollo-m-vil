@@ -8,7 +8,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout2"
         android:layout_width="412dp"
-        android:layout_height="215dp"
+        android:layout_height="192dp"
         android:background="@drawable/mi_coraz_n_siempre_estar__en_madrid"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -124,8 +124,8 @@
 
         <TextView
             android:id="@+id/textView8"
-            android:layout_width="415dp"
-            android:layout_height="189dp"
+            android:layout_width="416dp"
+            android:layout_height="120dp"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:text="@string/description_content"
@@ -142,8 +142,8 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="410dp"
-        android:layout_height="223dp"
+        android:layout_width="414dp"
+        android:layout_height="247dp"
         android:background="@drawable/mi_coraz_n_siempre_estar__en_madrid"
         android:foregroundGravity="center_vertical"
         android:scrollbars="horizontal"
@@ -152,7 +152,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rankingDescription"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintVertical_bias="0.95">
 
         <ImageView
             android:id="@+id/imageView5"
