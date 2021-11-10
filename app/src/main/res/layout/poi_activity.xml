@@ -12,12 +12,12 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <LinearLayout
                 android:id="@+id/header"
-                android:layout_width="416dp"
-                android:layout_height="59dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:background="@color/black"
                 android:gravity="center_vertical"
                 android:orientation="horizontal">
@@ -45,16 +45,17 @@
             </LinearLayout>
 
             <FrameLayout
-                android:id="@+id/constraintLayout2"
-                android:layout_width="412dp"
+                android:id="@+id/poiImage"
+                android:layout_width="wrap_content"
                 android:layout_height="192dp"
-                android:background="@drawable/mi_coraz_n_siempre_estar__en_madrid">
+                android:layout_weight="0.5"
+                android:background="@drawable/madrid">
 
             </FrameLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/rankingDescription"
-                android:layout_width="414dp"
+                android:layout_width="match_parent"
                 android:layout_height="296dp"
                 android:background="@color/black">
 
@@ -143,7 +144,7 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="322dp"
-                android:background="@drawable/mi_coraz_n_siempre_estar__en_madrid"
+                android:background="@drawable/madrid"
                 android:foregroundGravity="center_vertical"
                 android:scrollbars="horizontal">
 
