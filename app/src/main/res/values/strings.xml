@@ -5,7 +5,8 @@
     <string name="travellers_main">Travellers</string>
     <string name="bienvenido_main">Bienvenido a</string>
     <string name="title_poi">Título genérico</string>
+    <string name="title_generico">TITULO GENÉRICO</string>
     <string name="ranking_poi">Ranking de clasificación:</string>
     <string name="description_title">Descripción:</string>
-    <string name="description_content">Esta es uan descripción genérica de lo que puede tener el contenido de la aplicación. Esta se va a cambiar posteriormente al tener definido un punto de interés asociado a esta.</string>
+    <string name="description_content">Esta es una descripción genérica de lo que puede tener el contenido de la aplicación. Esta se va a cambiar posteriormente al tener definido un punto de interés asociado a esta.</string>
 </resources>
