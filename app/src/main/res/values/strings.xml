@@ -9,4 +9,10 @@
     <string name="ranking_poi">Ranking de clasificación:</string>
     <string name="description_title">Información General:</string>
     <string name="description_content">El Barrio de Huertas está lleno de encanto para el visitante. Puede encontrar de todo, comenzando por sus sus calles de poetas, sus espectáculos de teatro y musicales, así como mercadillos y, por supuesto sus bares, discotecas y pubs emblemáticos.</string>
+    <string name="todo">TODO</string>
+    <string name="Arreglo">TODO</string>
+    <string name="texto_ubicacion">Se encuentra en el Distrito Centro de Madrid.</string>
+    <string name="titulo_ubicacion">Ubicación:</string>
+    <string name="calificacion">5/5</string>
+    <string name="poi_1_barrio_de_huertas">POI # 1: Barrio de Huertas</string>
 </resources>
