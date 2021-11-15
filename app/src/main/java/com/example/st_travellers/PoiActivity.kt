@@ -11,8 +11,5 @@ class PoiActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.poi_activity)
-
-        val tituloHeader = findViewById<TextView>(R.id.titleHeader)
-        tituloHeader.text = "TÍTULO GENÉRICO"
     }
 }
