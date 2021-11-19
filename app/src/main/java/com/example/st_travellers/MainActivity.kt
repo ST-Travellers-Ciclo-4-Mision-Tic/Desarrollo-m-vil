@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
 
         val btnVerMas = findViewById<Button>(R.id.btnVerMas)
         btnVerMas.setOnClickListener{
-            val intent = Intent(this, PoiActivity::class.java)
+            val intent = Intent(this, PoiListActivity::class.java)
             startActivity(intent)
         }
     }

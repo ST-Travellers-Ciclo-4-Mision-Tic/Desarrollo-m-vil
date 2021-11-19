@@ -6,13 +6,30 @@
     android:layout_height="match_parent"
     android:background="#202328">
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/poi_recycler_view"
+        android:layout_width="418dp"
+        android:layout_height="598dp"
+        android:layout_marginStart="10dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.0" />
+
     <LinearLayout
         android:id="@+id/header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
         android:background="@color/black"
         android:gravity="center_vertical"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/logoHeader"
@@ -20,6 +37,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:contentDescription="@string/logo_description"
+            android:paddingStart="0dp"
+            android:paddingLeft="0dp"
             app:srcCompat="@drawable/mesa_de_trabajo_1" />
 
         <TextView
@@ -39,23 +58,20 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="412dp"
-        android:layout_height="71dp"
+        android:layout_width="400dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="4dp"
         android:layout_weight="1"
-        android:paddingStart="15dp"
+        android:gravity="start"
+        android:paddingStart="20dp"
         android:text="¿Qué esperas para iniciar tu nueva aventura?"
-        android:textAlignment="viewStart"
+        android:textAlignment="textStart"
         android:textColor="@color/design_default_color_background"
         android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/poi_recycler_view"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="65dp" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/poi_recycler_view"
+        app:layout_constraintTop_toBottomOf="@+id/header" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="409dp"
-        android:layout_height="593dp"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="137dp"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        />
 </androidx.constraintlayout.widget.ConstraintLayout>
