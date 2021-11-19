@@ -1,0 +1,20 @@
+[
+  {
+    "nombre": "Puerta de Alcalá",
+    "descripcion": "La descripción",
+    "ranking": 5,
+    "urlImage": ""
+  },
+  {
+    "nombre": "Palacio de Cibeles",
+    "descripcion": "La descripción 2",
+    "ranking": 5,
+    "urlImage": ""
+  },
+  {
+    "nombre": "Jardín Botánico",
+    "descripcion": "La descripción 3",
+    "ranking": 5,
+    "urlImage": ""
+  }
+]

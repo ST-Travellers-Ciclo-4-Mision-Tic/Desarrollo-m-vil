@@ -19,7 +19,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".PoiActivity"></activity>
-        <activity android:name=".PoiListActivity"></activity>
+        <activity android:name=".PoiListActivity"></activity>}
+        <activity android:name=".CardActivity"></activity>
 
         <meta-data
             android:name="preloaded_fonts"

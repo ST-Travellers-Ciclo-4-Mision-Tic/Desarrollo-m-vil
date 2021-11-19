@@ -9,7 +9,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
 class PoiListAdapter(
-    private val poiList: ArrayList<POI>
+    private val poiList: ArrayList<POIItem>
 ): RecyclerView.Adapter<PoiListAdapter.PoiViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PoiViewHolder {
@@ -30,7 +30,7 @@ class PoiListAdapter(
         private var descripcionTextView: TextView = itemView.findViewById(R.id.descripcionPOI)
         private var ranking: TextView = itemView.findViewById(R.id.rankingPOI)
 
-        fun bind(poi: POI) {
+        fun bind(poi: POIItem) {
             Log.d("Nombre: ", poi.nombre)
             nombreTextView.text = poi.nombre
             descripcionTextView.text = poi.descripcion
