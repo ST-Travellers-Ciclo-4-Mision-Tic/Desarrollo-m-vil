@@ -37,7 +37,7 @@ class PoiListAdapter(
             nombreTextView.text = poi.nombre
             descripcionTextView.text = poi.descripcion
             ranking.text = poi.puntuacion.toString()
-            Picasso.get().load("https://cloudfront-us-east-1.images.arcpublishing.com/gruporepublica/GLJZRZ34WVDBDD4UC2V53Z4YHM.jpg").into(image)
+            Picasso.get().load(poi.imagen).resize(500, 350).into(image)
         }
     }
 }

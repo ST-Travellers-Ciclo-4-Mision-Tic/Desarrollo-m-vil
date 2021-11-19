@@ -9,6 +9,7 @@
     <androidx.cardview.widget.CardView
         android:layout_width="413dp"
         android:layout_height="134dp"
+        android:foregroundGravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -32,7 +33,10 @@
                     android:layout_width="308dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:paddingLeft="5dp"
+                    android:contentDescription="@string/no_internet"
+                    android:foregroundGravity="center"
+                    android:paddingStart="5dp"
+                    android:paddingTop="15dp"
                     app:srcCompat="@drawable/puerta_alcala" />
 
                 <LinearLayout
@@ -48,6 +52,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/assistant_bold"
+                        android:gravity="top|left"
                         android:paddingTop="10dp"
                         android:text="Puerta de Alcalá"
                         android:textColor="#FFFFFF"
@@ -58,7 +63,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:paddingTop="5dp"
-                        android:paddingEnd="10dp"
+                        android:paddingEnd="15dp"
                         android:text="La Puerta de Alcalá es uno de los monumentos de Madrid más emblematicos."
                         android:textColor="#FFFFFF" />
 

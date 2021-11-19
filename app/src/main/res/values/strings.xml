@@ -14,4 +14,5 @@
     <string name="name_poi"> Barrio de Huertas</string>
     <string name="arrows">arrow</string>
     <string name="pregunta">¿Qué esperas para iniciar tu nueva aventura?</string>
+    <string name="no_internet">No esta conectado a internet</string>
 </resources>
