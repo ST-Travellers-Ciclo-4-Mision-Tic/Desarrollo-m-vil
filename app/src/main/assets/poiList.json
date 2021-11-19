@@ -1,0 +1,30 @@
+[
+  {
+    "nombre": "poi1",
+    "descripcion": "Descripción del poi 1",
+    "ubicacion": "mi casa",
+    "imagen": "@drawables/imgPoi1",
+    "puntuacion": 1
+  },
+  {
+    "nombre": "poi2",
+    "descripcion": "Descripción del poi 2",
+    "ubicacion": "mi casa",
+    "imagen": "@drawables/imgPoi2",
+    "puntuacion": 2
+  },
+  {
+    "nombre": "poi3",
+    "descripcion": "Descripción del poi 3",
+    "ubicacion": "mi casa",
+    "imagen": "@drawables/imgPoi3",
+    "puntuacion": 3
+  },
+  {
+    "nombre": "poi4",
+    "descripcion": "Descripción del poi 4",
+    "ubicacion": "mi casa",
+    "imagen": "@drawables/imgPoi4",
+    "puntuacion": 4
+  }
+]
