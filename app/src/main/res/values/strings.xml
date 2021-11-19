@@ -4,8 +4,15 @@
     <string name="logo_description">Logo</string>
     <string name="travellers_main">Travellers</string>
     <string name="bienvenido_main">Bienvenido a</string>
-    <string name="title_poi">Título genérico</string>
+    <string name="title_poi">MADRID (ESPAÑA)</string>
     <string name="ranking_poi">Ranking de clasificación:</string>
-    <string name="description_title">Descripción:</string>
-    <string name="description_content">Esta es uan descripción genérica de lo que puede tener el contenido de la aplicación. Esta se va a cambiar posteriormente al tener definido un punto de interés asociado a esta.</string>
+    <string name="description_title">Información General:</string>
+    <string name="description_content">El Barrio de Huertas está lleno de encanto para el visitante. Puede encontrar de todo, comenzando por sus calles de poetas, sus espectáculos de teatro y musicales, así como mercadillos y, por supuesto sus bares, discotecas y pubs emblemáticos.</string>
+    <string name="texto_ubicacion">Se encuentra en el Distrito Centro de Madrid.</string>
+    <string name="titulo_ubicacion">Ubicación:</string>
+    <string name="calificacion">5/5</string>
+    <string name="name_poi"> Barrio de Huertas</string>
+    <string name="arrows">arrow</string>
+    <string name="pregunta">¿Qué esperas para iniciar tu nueva aventura?</string>
+    <string name="no_internet">No esta conectado a internet</string>
 </resources>

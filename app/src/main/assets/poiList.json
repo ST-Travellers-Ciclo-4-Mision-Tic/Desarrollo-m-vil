@@ -1,0 +1,33 @@
+[
+  {
+    "nombre": "El Oso y el Madroño",
+    "descripcion": "Es una escultura de Antonio Navarro Santafé que se encuentra en la ciudad española de Madrid.",
+    "imagen": "https://i.ibb.co/XsqbSmn/Oso-YMadro-o.jpg",
+    "puntuacion": 4
+  },
+  {
+    "nombre": "Parque Del Retiro",
+    "descripcion": "Es un jardín histórico y parque público situado en Madrid (España).",
+    "imagen": "https://i.ibb.co/Xb08R30/Parque-Del-Retiro.jpg",
+    "puntuacion": 4.5
+  },
+  {
+    "nombre": "Puerta De Alcala",
+    "descripcion": "Situada en el centro de la Plaza de la Independencia, la Puerta de Alcalá es una de las cinco antiguas puertas reales.",
+    "imagen": "https://i.ibb.co/K6Mv6sL/Puerta-de-Alcal.jpg",
+    "puntuacion": 4.2
+  },
+  {
+    "nombre": "Barrio Chueca",
+    "descripcion": "El barrio de Chueca es el mas diverso culturalmente de Madrid y todo un símbolo de modernidad.",
+    "imagen": "https://i.ibb.co/Fm24g4Y/Barrio-Chueca.jpg",
+    "puntuacion": 4
+  },
+  {
+    "nombre": "Palacio Real",
+    "descripcion": "El Palacio Real de Madrid, popularmente conocido también como Palacio de Oriente",
+    "imagen": "https://i.ibb.co/3rbQH60/Palacio-Real.jpg",
+    "puntuacion": 4.5
+  }
+
+]
