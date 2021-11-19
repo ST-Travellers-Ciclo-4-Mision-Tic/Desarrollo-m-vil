@@ -13,4 +13,5 @@
     <string name="calificacion">5/5</string>
     <string name="name_poi"> Barrio de Huertas</string>
     <string name="arrows">arrow</string>
+    <string name="pregunta">¿Qué esperas para iniciar tu nueva aventura?</string>
 </resources>

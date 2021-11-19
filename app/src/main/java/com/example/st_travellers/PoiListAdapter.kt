@@ -4,12 +4,13 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextClock
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.squareup.picasso.Picasso
 
 class PoiListAdapter(
-    private val poiList: ArrayList<POI>
+    private val poiList: List<Poi>
 ): RecyclerView.Adapter<PoiListAdapter.PoiViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PoiViewHolder {
@@ -26,15 +27,17 @@ class PoiListAdapter(
 
     class PoiViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
 
-        private var nombreTextView: TextView = itemView.findViewById(R.id.nombrePOI)
-        private var descripcionTextView: TextView = itemView.findViewById(R.id.descripcionPOI)
-        private var ranking: TextView = itemView.findViewById(R.id.rankingPOI)
+        private val nombreTextView: TextView = itemView.findViewById(R.id.nombrePOI)
+        private val descripcionTextView: TextView = itemView.findViewById(R.id.descripcionPOI)
+        private val ranking: TextView = itemView.findViewById(R.id.rankingPOI)
+        private val image: ImageView = itemView.findViewById(R.id.imagePoiList)
 
-        fun bind(poi: POI) {
+        fun bind(poi: Poi) {
             Log.d("Nombre: ", poi.nombre)
             nombreTextView.text = poi.nombre
             descripcionTextView.text = poi.descripcion
-            ranking.text = poi.ranking.toString()
+            ranking.text = poi.puntuacion.toString()
+            Picasso.get().load("https://cloudfront-us-east-1.images.arcpublishing.com/gruporepublica/GLJZRZ34WVDBDD4UC2V53Z4YHM.jpg").into(image)
         }
     }
 }

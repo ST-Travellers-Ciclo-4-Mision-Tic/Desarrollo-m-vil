@@ -2,6 +2,8 @@ package com.example.st_travellers
 
 import android.content.Context
 import android.util.Log
+import com.google.gson.Gson
+import com.google.gson.reflect.TypeToken
 
 import io.ktor.client.*
 import io.ktor.client.engine.cio.*
