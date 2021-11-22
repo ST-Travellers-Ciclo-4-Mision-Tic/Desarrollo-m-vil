@@ -30,6 +30,7 @@ class PoiListActivity : AppCompatActivity() {
         }
     }
 
+    //Función para pasar la información del JSON a una clase ya creada.
     private fun returnJsonInList(): List<Poi> {
         //utiliza la función de Utils.kt enviandole el contexto y el nombre del archivo.
         val jsonFileString = getJsonDataFromAssets(applicationContext, "poiList.json")

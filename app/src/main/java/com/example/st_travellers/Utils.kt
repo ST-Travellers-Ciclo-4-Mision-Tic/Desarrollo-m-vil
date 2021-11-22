@@ -2,15 +2,12 @@ package com.example.st_travellers
 
 import android.content.Context
 import android.util.Log
-import com.google.gson.Gson
-import com.google.gson.reflect.TypeToken
-
 import io.ktor.client.*
 import io.ktor.client.engine.cio.*
 import io.ktor.client.features.json.*
 import io.ktor.client.request.*
 
-//funcipon para traer la información de un json
+//función para traer la información de un json local
 fun getJsonDataFromAssets(context: Context, fileName: String): String {
     var jsonString: String = ""
     try {
@@ -22,7 +19,8 @@ fun getJsonDataFromAssets(context: Context, fileName: String): String {
     return jsonString
 }
 
-//Suspend dice que la función va a ser corrida en una corutina
+//Suspend dice que la función va a ser corrida en una corrutina
+//Función para traer la información de un JSON hosteado en la web
 suspend fun getJsonFromWeb(): Prueba? {
     //variable para guardar el response
     var response: Prueba? = null
