@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
 
 class PoiListAdapter(
-    private val poiList: List<Poi>?,
+    private val poiList: List<PoiData>?,
     private val listener: OnItemClickListener
 ) : RecyclerView.Adapter<PoiListAdapter.PoiViewHolder>() {
 
@@ -42,7 +42,7 @@ class PoiListAdapter(
             itemView.setOnClickListener(this)
         }
 
-        fun bind(poi: Poi) {
+        fun bind(poi: PoiData) {
             nombreTextView.text = poi.nombre
             descripcionTextView.text = poi.descripcion
             ranking.text = poi.puntuacion.toString()
