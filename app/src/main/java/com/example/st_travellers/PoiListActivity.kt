@@ -1,5 +1,6 @@
 package com.example.st_travellers
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
@@ -8,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 
-class PoiListActivity : AppCompatActivity() {
+class PoiListActivity : AppCompatActivity(), PoiListAdapter.OnItemClickListener {
 
     private lateinit var poiList: List<Poi>
     private lateinit var poiListAdapter: PoiListAdapter
@@ -21,7 +22,7 @@ class PoiListActivity : AppCompatActivity() {
         poiRecyclerView = findViewById(R.id.poi_recycler_view)
 
         poiList = returnJsonInList()
-        poiListAdapter = PoiListAdapter(poiList)
+        poiListAdapter = PoiListAdapter(poiList, this)
 
         poiRecyclerView.apply {
             layoutManager = LinearLayoutManager(context)
@@ -29,6 +30,16 @@ class PoiListActivity : AppCompatActivity() {
             setHasFixedSize(false)
         }
     }
+    override fun onItemClick(position: Int) {
+        val clickedItem: Poi = poiList[position]
+        val intent = Intent(this, PoiActivity::class.java)
+        intent.putExtra("poiName", clickedItem.nombre)
+        intent.putExtra("poiRanking", clickedItem.puntuacion.toString())
+        intent.putExtra("poiDescription", clickedItem.descripcion)
+        intent.putExtra("poiImage", clickedItem.imagen)
+        startActivity(intent)
+    }
+
 
     private fun returnJsonInList(): List<Poi> {
         //utiliza la función de Utils.kt enviandole el contexto y el nombre del archivo.
@@ -45,3 +56,6 @@ class PoiListActivity : AppCompatActivity() {
         return pois
     }
 }
+
+
+
