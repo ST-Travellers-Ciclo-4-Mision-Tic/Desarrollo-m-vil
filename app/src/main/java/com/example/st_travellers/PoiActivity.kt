@@ -2,21 +2,30 @@ package com.example.st_travellers
 
 import android.os.Build
 import android.os.Bundle
+import android.widget.ImageView
 import android.widget.TextClock
 import android.widget.TextView
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
+import com.squareup.picasso.Picasso
 
 class PoiActivity : AppCompatActivity() {
-    @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.poi_activity)
         //Obtener info del listado
         //poiName viene de poiListActivity
         //con getExtraString lo lees y lo asignas a una variable
-        val poiName = intent.getStringExtra("poiName").toString()
+        //variables de las vistas
+        val tituloPoi: TextView = findViewById(R.id.poiTitle)
+        tituloPoi.text = intent.getStringExtra("poiName").toString()
+        val ranking: TextView = findViewById(R.id.rankingTextPoi)
+        val rankingTop = intent.getStringExtra("poiRanking").toString()
+        ranking.text = "$rankingTop/5"
+        val poiImage: ImageView = findViewById(R.id.poiImage)
+        Picasso.get().load(intent.getStringExtra("poiImage")).resize(1000, 600).into(poiImage)
+        val descriptionPoi: TextView = findViewById(R.id.descriptionPoi)
+        descriptionPoi.text = intent.getStringExtra("poiDescription")
 
-        println(poiName)
     }
 }

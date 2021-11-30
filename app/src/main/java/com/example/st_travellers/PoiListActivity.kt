@@ -2,8 +2,6 @@ package com.example.st_travellers
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
-import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -37,7 +35,7 @@ class PoiListActivity : AppCompatActivity(), PoiListAdapter.OnItemClickListener 
         intent.putExtra("poiName", clickedItem.nombre)
         intent.putExtra("poiRanking", clickedItem.puntuacion.toString())
         //descripcion corta, cambiar por la larga
-        intent.putExtra("poiDescription", clickedItem.descripcion)
+        intent.putExtra("poiDescription", clickedItem.descripcioncompleta)
         intent.putExtra("poiImage", clickedItem.imagen)
         startActivity(intent)
     }

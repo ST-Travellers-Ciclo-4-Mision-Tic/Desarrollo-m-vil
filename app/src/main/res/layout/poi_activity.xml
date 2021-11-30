@@ -40,48 +40,27 @@
                     tools:ignore="MissingConstraints" />
 
                 <TextView
-                    android:id="@+id/textView5"
+                    android:id="@+id/poiTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="292dp"
-                    android:text="@string/name_poi"
-                    android:textColor="@color/white"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.262"
-                    app:layout_constraintStart_toEndOf="@+id/logoHeader"
-                    tools:ignore="MissingConstraints" />
-
-                <TextView
-                    android:id="@+id/textView3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
                     android:text="@string/title_poi"
                     android:textColor="#FFFFFF"
                     android:textSize="34sp"
-                    app:layout_constraintBottom_toTopOf="@+id/textView5"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintHorizontal_bias="0.325"
                     app:layout_constraintStart_toEndOf="@+id/logoHeader"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.842" />
-
-                <ImageView
-                    android:id="@+id/imageView"
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:contentDescription="@string/description_title"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/logoHeader"
-                    app:layout_constraintVertical_bias="0.0"
-                    app:srcCompat="@drawable/madrid_peque" />
+                    app:layout_constraintTop_toTopOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                android:id="@+id/poiImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/description_title"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="96dp" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/rankingDescription"
@@ -109,7 +88,7 @@
                     app:layout_constraintVertical_bias="0.035" />
 
                 <TextView
-                    android:id="@+id/rankingImage"
+                    android:id="@+id/rankingTextPoi"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/roboto_normal"
