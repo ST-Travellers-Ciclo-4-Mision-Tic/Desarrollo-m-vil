@@ -3,10 +3,8 @@ package com.example.st_travellers.view
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.AdapterView
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.lifecycle.MutableLiveData
 import androidx.recyclerview.widget.RecyclerView
 import com.example.st_travellers.R
 import com.example.st_travellers.data.model.PoiData

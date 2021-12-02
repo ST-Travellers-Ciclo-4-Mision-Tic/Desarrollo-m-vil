@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.st_travellers.R
 import com.example.st_travellers.data.model.PoiData
-import com.example.st_travellers.viewModel.PoiListViewModel
+import com.example.st_travellers.view.viewModel.PoiListViewModel
 
 class PoiListActivity : AppCompatActivity(), PoiListAdapter.OnItemClickListener {
 

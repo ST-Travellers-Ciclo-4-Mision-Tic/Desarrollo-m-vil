@@ -1,4 +1,4 @@
-package com.example.st_travellers.viewModel
+package com.example.st_travellers.view.viewModel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
