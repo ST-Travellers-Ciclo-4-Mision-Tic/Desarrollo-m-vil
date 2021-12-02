@@ -1,12 +1,10 @@
-package com.example.st_travellers
+package com.example.st_travellers.view
 
-import android.os.Build
 import android.os.Bundle
 import android.widget.ImageView
-import android.widget.TextClock
 import android.widget.TextView
-import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
+import com.example.st_travellers.R
 import com.squareup.picasso.Picasso
 
 class PoiActivity : AppCompatActivity() {

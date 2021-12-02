@@ -1,4 +1,4 @@
-package com.example.st_travellers
+package com.example.st_travellers.data.model
 
 data class Poi(val pois: List<PoiData>)
 

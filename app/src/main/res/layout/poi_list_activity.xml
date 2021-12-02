@@ -67,5 +67,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    <ProgressBar
+        android:id="@+id/loadingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
 
 </LinearLayout>
