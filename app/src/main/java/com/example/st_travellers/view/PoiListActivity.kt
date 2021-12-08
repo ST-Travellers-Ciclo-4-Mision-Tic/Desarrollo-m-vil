@@ -10,6 +10,7 @@ import androidx.core.view.isVisible
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.st_travellers.R
+import com.example.st_travellers.data.model.Coords
 import com.example.st_travellers.data.model.PoiData
 import com.example.st_travellers.view.viewModel.PoiListViewModel
 
@@ -51,11 +52,15 @@ class PoiListActivity : AppCompatActivity(), PoiListAdapter.OnItemClickListener 
 
     override fun onItemClick(position: Int) {
         val clickedItem: PoiData = poiList[position]
+        poiListViewModel.positionClicked.postValue(position)
         val intent = Intent(this, PoiActivity::class.java)
         intent.putExtra("poiName", clickedItem.nombre)
         intent.putExtra("poiRanking", clickedItem.puntuacion.toString())
         intent.putExtra("poiDescription", clickedItem.descripcioncompleta)
         intent.putExtra("poiImage", clickedItem.imagen)
+        Coords.PositionCoords.position = position
+        Coords.latitud = clickedItem.latitud
+        Coords.longitud = clickedItem.longitud
         startActivity(intent)
     }
 

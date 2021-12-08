@@ -11,6 +11,7 @@ class PoiListViewModel : ViewModel() {
     val poilist = MutableLiveData<List<PoiData>>()
     val isLoading = MutableLiveData<Boolean>()
     var getPois = GetPois()
+    val positionClicked = MutableLiveData<Int>()
 
     fun onCreate() {
         viewModelScope.launch {
@@ -20,6 +21,7 @@ class PoiListViewModel : ViewModel() {
                 poilist.postValue(result)
             }
             isLoading.postValue(false)
+            positionClicked.postValue(0)
         }
     }
 

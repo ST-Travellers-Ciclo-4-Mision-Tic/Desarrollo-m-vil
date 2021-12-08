@@ -7,9 +7,11 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-27dp">
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -129,7 +131,6 @@
                     android:id="@+id/descriptionPoi"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="16dp"
                     android:background="#1E000000"
                     android:fontFamily="@font/roboto_normal"
                     android:text="@string/description_content"
@@ -137,7 +138,7 @@
                     android:textSize="14sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.492"
+                    app:layout_constraintHorizontal_bias="0.7"
                     app:layout_constraintStart_toStartOf="parent"
                     tools:ignore="MissingClass,MissingConstraints" />
 
@@ -187,10 +188,10 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.fragment.app.FragmentContainerView
-                android:id="@+id/fragmentContainerView"
+                android:id="@+id/mapFragment"
                 android:name="com.example.st_travellers.maps.MapsFragment"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="500dp" />
 
         </LinearLayout>
     </ScrollView>

@@ -3,6 +3,7 @@ package com.example.st_travellers.data.network
 import com.example.st_travellers.data.model.PoiData
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
+import retrofit2.create
 
 class PoiService {
     private val retrofit = RetrofitHelper.getRetrofit()

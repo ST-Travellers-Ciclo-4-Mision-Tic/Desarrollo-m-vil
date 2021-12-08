@@ -7,5 +7,7 @@ data class PoiData(
     val descripcion: String,
     val imagen: String,
     val puntuacion: Float,
-    val descripcioncompleta: String
+    val descripcioncompleta: String,
+    val latitud: Double,
+    val longitud: Double
 )
