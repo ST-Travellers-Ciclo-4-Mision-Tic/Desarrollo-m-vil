@@ -12,9 +12,14 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.st_travellers.R
 import com.example.st_travellers.data.model.Coords
 import com.example.st_travellers.data.model.PoiData
+import com.example.st_travellers.databinding.PoiListActivityBinding
 import com.example.st_travellers.view.viewModel.PoiListViewModel
+import com.google.android.material.internal.ContextUtils.getActivity
+
 
 class PoiListActivity : AppCompatActivity(), PoiListAdapter.OnItemClickListener {
+
+    private lateinit var binding: PoiListActivityBinding
 
     private lateinit var poiList: List<PoiData>
     private lateinit var poiListAdapter: PoiListAdapter
@@ -24,17 +29,23 @@ class PoiListActivity : AppCompatActivity(), PoiListAdapter.OnItemClickListener 
     @SuppressLint("NotifyDataSetChanged")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.poi_list_activity)
+        binding = PoiListActivityBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        val loadingBar = findViewById<ProgressBar>(R.id.loadingBar)
+        binding.btnSettings.setOnClickListener {
+            val intent = Intent(this, PreferenceActivity::class.java)
+            startActivity(intent)
+        }
+
+        val loadingBar = findViewById<ProgressBar>(com.example.st_travellers.R.id.loadingBar)
 
         poiListViewModel.onCreate()
 
-        poiRecyclerView = findViewById(R.id.poi_recycler_view)
+        poiRecyclerView = findViewById(com.example.st_travellers.R.id.poi_recycler_view)
 
         poiListViewModel.poilist.observe(this, {
             poiList = it
-            poiListAdapter = PoiListAdapter(poiList,this)
+            poiListAdapter = PoiListAdapter(poiList, this)
             poiListAdapter.notifyDataSetChanged()
             poiRecyclerView.apply {
                 layoutManager = LinearLayoutManager(context)

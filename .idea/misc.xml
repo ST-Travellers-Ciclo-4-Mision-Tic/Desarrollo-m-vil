@@ -19,10 +19,12 @@
         <entry key="..\:/prog/Kotlin/ST_Travellers/app/src/main/res/layout/poi.xml" value="0.33" />
         <entry key="..\:/prog/Kotlin/ST_Travellers/app/src/main/res/layout/poi_activity.xml" value="0.25" />
         <entry key="..\:/prog/Kotlin/ST_Travellers/app/src/main/res/layout/poi_card.xml" value="0.13020833333333334" />
-        <entry key="..\:/prog/Kotlin/ST_Travellers/app/src/main/res/layout/poi_list_activity.xml" value="0.1766304347826087" />
+        <entry key="..\:/prog/Kotlin/ST_Travellers/app/src/main/res/layout/poi_list_activity.xml" value="0.1" />
+        <entry key="..\:/prog/Kotlin/ST_Travellers/app/src/main/res/layout/preference_activity.xml" value="0.1" />
+        <entry key="..\:/prog/Kotlin/ST_Travellers/app/src/main/res/layout/root_preferences.xml" value="0.1" />
         <entry key="..\:/prog/Kotlin/ST_Travellers/app/src/main/res/layout/row_layout.xml" value="0.33" />
         <entry key="..\:/prog/Kotlin/ST_Travellers/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2833333333333333" />
-        <entry key="..\:/prog/Kotlin/ST_Travellers/app/src/main/res/xml/root_preferences.xml" value="0.197265625" />
+        <entry key="..\:/prog/Kotlin/ST_Travellers/app/src/main/res/xml/root_preferences.xml" value="0.25" />
       </map>
     </option>
   </component>
