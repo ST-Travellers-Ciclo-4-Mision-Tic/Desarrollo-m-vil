@@ -7,7 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.st_travellers.R
-import com.example.st_travellers.data.model.Coords
+import com.example.st_travellers.data.Coords
 import com.squareup.picasso.Picasso
 
 class PoiActivity : AppCompatActivity() {

@@ -1,4 +1,4 @@
-package com.example.st_travellers.data.model
+package com.example.st_travellers.data
 
 class Coords {
 

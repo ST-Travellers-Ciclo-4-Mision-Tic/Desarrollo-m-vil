@@ -9,12 +9,10 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.st_travellers.R
-import com.example.st_travellers.data.model.Coords
+import com.example.st_travellers.data.Coords
 import com.example.st_travellers.data.model.PoiData
 import com.example.st_travellers.databinding.PoiListActivityBinding
 import com.example.st_travellers.view.viewModel.PoiListViewModel
-import com.google.android.material.internal.ContextUtils.getActivity
 
 
 class PoiListActivity : AppCompatActivity(), PoiListAdapter.OnItemClickListener {
