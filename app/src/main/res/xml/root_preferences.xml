@@ -4,15 +4,17 @@
     <PreferenceCategory app:title="@string/preference_title">
         <CheckBoxPreference
             android:defaultValue="false"
+            android:icon="@drawable/ic_notifications"
             android:key="notifications"
-            android:title="@string/preference_title"
-            android:icon="@drawable/ic_notifications"/>
+            android:title="@string/preference_title">
+        </CheckBoxPreference>
+
         <CheckBoxPreference
-            app:dependency="notifications"
             android:defaultValue="false"
+            android:icon="@drawable/ic_sound"
             android:key="check_box_preference_2"
             android:title="Sonido de notificaciones"
-            android:icon="@drawable/ic_sound"/>
+            app:dependency="notifications" />
     </PreferenceCategory>
 
 </PreferenceScreen>
