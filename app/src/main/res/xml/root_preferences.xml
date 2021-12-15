@@ -3,16 +3,21 @@
 
     <PreferenceCategory app:title="@string/preference_title">
         <CheckBoxPreference
+            android:backgroundTint="@color/white"
             android:defaultValue="false"
             android:icon="@drawable/ic_notifications"
             android:key="notifications"
-            android:title="@string/preference_title">
-        </CheckBoxPreference>
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/white"
+            android:title="@string/preference_title" />
 
         <CheckBoxPreference
             android:defaultValue="false"
             android:icon="@drawable/ic_sound"
             android:key="check_box_preference_2"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/white"
+            android:theme="@style/AppTheme"
             android:title="Sonido de notificaciones"
             app:dependency="notifications" />
     </PreferenceCategory>

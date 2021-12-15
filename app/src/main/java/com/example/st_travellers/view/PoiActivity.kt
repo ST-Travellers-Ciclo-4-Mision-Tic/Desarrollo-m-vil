@@ -24,7 +24,7 @@ class PoiActivity : AppCompatActivity() {
         tituloPoi.text = intent.getStringExtra("poiName").toString()
         val ranking: TextView = findViewById(R.id.rankingTextPoi)
         val rankingTop = intent.getStringExtra("poiRanking").toString()
-        ranking.text = "$rankingTop/5"
+        ranking.text = ("$rankingTop / 5")
         val poiImage: ImageView = findViewById(R.id.poiImage)
         Picasso.get().load(intent.getStringExtra("poiImage")).resize(1000, 600).into(poiImage)
         val descriptionPoi: TextView = findViewById(R.id.descriptionPoi)
@@ -32,15 +32,26 @@ class PoiActivity : AppCompatActivity() {
         btnExtMaps.setOnClickListener {
             val intent = Intent(
                 Intent.ACTION_VIEW,
-                Uri.parse("https://www.google.com/maps/search/?api=1&query=${
-                    Coords.latitud}%2C${Coords.longitud}")
+                Uri.parse(
+                    "https://www.google.com/maps/search/?api=1&query=${
+                        Coords.latitud
+                    }%2C${
+                        Coords.longitud
+                    }"
+                )
             )
             startActivity(intent)
         }
         textExtMaps.setOnClickListener {
             val intent = Intent(
                 Intent.ACTION_VIEW,
-                Uri.parse("https://www.google.com/maps/search/?api=1&query=${Coords.latitud}%2C${Coords.longitud}")
+                Uri.parse(
+                    "https://www.google.com/maps/search/?api=1&query=${
+                        Coords.latitud
+                    }%2C${
+                        Coords.longitud
+                    }"
+                )
             )
             startActivity(intent)
         }
